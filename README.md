@@ -4,7 +4,7 @@
 
 This database records the public history of alpine caving in the Bob Marshall Wilderness Complex in Montana. The focus is notable people, named cave systems, expeditions, and the three published karst zones where that work has taken place: Silvertip, Scapegoat, and Turtle Mountain (Turtlehead).
 
-The project is a working register of published facts, not a cave-location catalog and not a complete history. Location is stored only as a published zone name and county. No coordinates, trailheads, approach notes, or unpublished passages are included. The long-term aim is to support later writing about the people and expeditions that pioneered and continued this work. This first version meets the course minimum and includes a few extra published rows so all three zones are represented. The set will grow over the semester.
+The project is a working register of published facts, not a cave-location catalog and not a complete history. Location is stored only as a published zone name and county. No coordinates, trailheads, approach notes, or unpublished passages are included. The long-term aim is to support later writing about the people and expeditions that pioneered and continued this work.
 
 ## Entities and sample instances
 

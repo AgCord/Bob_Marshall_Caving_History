@@ -92,3 +92,4 @@ Sample instances:
 - a claim that the record is complete
 
 Sources for later expansion include published NSS material, newspaper and magazine accounts, grotto talks already on the public web, and other print sources. Private interviews and member-only files are out of scope until permission exists.
+Repository cloned to the database server for the command-line project.

@@ -1,9 +1,9 @@
 /*M!999999\- enable the sandbox mode */ 
--- MariaDB dump 10.19-11.8.8-MariaDB, for debian-linux-gnu (x86_64)
+-- MariaDB dump 10.19-11.8.6-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: bmcaving
 -- ------------------------------------------------------
--- Server version	11.8.8-MariaDB-1 from Debian
+-- Server version	11.8.6-MariaDB-5ubuntu0.1 from Ubuntu
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -194,7 +194,7 @@ CREATE TABLE `person` (
   `role` varchar(100) DEFAULT NULL,
   `years_active` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`person_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -206,7 +206,8 @@ LOCK TABLES `person` WRITE;
 /*!40000 ALTER TABLE `person` DISABLE KEYS */;
 INSERT INTO `person` VALUES
 (1,'Newell','Campbell','Scientist/author','1970s'),
-(2,'Dustin','K.','Expedition leader',NULL);
+(2,'Dustin','K.','Expedition leader',NULL),
+(3,'Alfred','Swindle','Mule','');
 /*!40000 ALTER TABLE `person` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -221,4 +222,4 @@ SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-09-24 20:13:57
+-- Dump completed on 2026-10-30  1:32:16

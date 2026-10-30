@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+            Bob Marshall Caving History - People
+
+        </title>
+    </head>
+    <body>
+        <h1>
+
+            Person
+
+        </h1>
+        <p>
+
+            People who appear in the published history of alpine caving in the Bob Marshall Wilderness
+            
+        </p>
+        <table border="1">
+            <tr>
+                <th>first_name</th>
+                <th>last_name</th>
+                <th>role</th>
+                <th>years_active</th>
+            </tr>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

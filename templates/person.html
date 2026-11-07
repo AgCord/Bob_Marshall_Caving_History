@@ -20,17 +20,21 @@
         </p>
         <table border="1">
             <tr>
+                <th>person_id</th>
                 <th>first_name</th>
                 <th>last_name</th>
                 <th>role</th>
                 <th>years_active</th>
+                <th>actions</th>
             </tr>
             {% for row in rows %}
             <tr>
+                <td>{{ row[4] }}</td>
                 <td>{{ row[0] }}</td>
                 <td>{{ row[1] }}</td>
                 <td>{{ row[2] }}</td>
                 <td>{{ row[3] }}</td>
+                <td><a href="?delete=true&id={{ row[4] }}">Delete</a> <a href="/updateperson?id={{ row[4] }}">Change</a></td>
             </tr>
             {% endfor %}
         </table>

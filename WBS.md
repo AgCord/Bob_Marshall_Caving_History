@@ -25,9 +25,9 @@ Bob Marshall Caving History - WBS
    4.3 Serve static HTML page (person.html) - DONE
 
 5. Remaining Work
-   5.1 Fill Flask pages from the database (templates) - Medium
+   5.1 Fill Flask pages from the database (templates) - Medium -Done
        Depends on: 4.3
-   5.2 CRUD in Flask for one table (Person) - Large
+   5.2 CRUD in Flask for one table (Person) - Large -Done
        Depends on: 5.1
    5.3 CRUD in Flask for many-to-many (Person-Expedition) - Large
        Depends on: 5.2

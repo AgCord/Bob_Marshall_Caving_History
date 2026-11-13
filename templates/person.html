@@ -10,7 +10,7 @@
     <body>
         <h1>
 
-            Person
+            {{ heading }}
 
         </h1>
         <p>
@@ -34,7 +34,7 @@
                 <td>{{ row[1] }}</td>
                 <td>{{ row[2] }}</td>
                 <td>{{ row[3] }}</td>
-                <td><a href="?delete=true&id={{ row[4] }}">Delete</a> <a href="/updateperson?id={{ row[4] }}">Change</a></td>
+                <td><a href="?delete=true&id={{ row[4] }}">Delete</a> <a href="/updateperson?id={{ row[4] }}">Change</a>  <a href="/expedition?person_id={{ row[4] }}">Expeditions</a></td>
             </tr>
             {% endfor %}
         </table>

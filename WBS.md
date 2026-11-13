@@ -29,8 +29,8 @@ Bob Marshall Caving History - WBS
        Depends on: 4.3
    5.2 CRUD in Flask for one table (Person) - Large -Done
        Depends on: 5.1
-   5.3 CRUD in Flask for many-to-many (Person-Expedition) - Large
-       Depends on: 5.2
+   5.3 CRUD in Flask for many-to-many (Person-Expedition) - Large -Done
+       Depends on: 5.2 
    5.4 Database considerations: limited-permission DB user,
        prepared statements, input sanitization (XSS) - Medium
        Depends on: 5.2 (build alongside CRUD)

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+            Bob Marshall Caving History - Expeditions
+
+        </title>
+    </head>
+    <body>
+        <h1>
+
+            {{ heading }}
+
+        </h1>
+        <p>
+
+            Expeditions from the published history of alpine caving in the Bob Marshall Wilderness
+            
+        </p>
+        <table border="1">
+            <tr>
+                <th>expedition_id</th>
+                <th>year</th>
+                <th>label</th>
+                <th>actions</th>
+            </tr>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td><a href="/person?expedition_id={{ row[0] }}">People</a></td>
+
+            </tr>
+            {% endfor %}
+        </table>
+        {% if others %}
+<form action="/expedition" method="GET">
+    <input type="hidden" name="person_id" value="{{ person_id }}">
+    <select name="add_expedition_id">
+        {% for other in others %}
+        <option value="{{ other[0] }}">{{ other[1] }} - {{ other[2] }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Add to expedition">
+</form>
+{% endif %}
+    </body>
+</html>

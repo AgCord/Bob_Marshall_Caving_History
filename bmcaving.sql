@@ -174,7 +174,8 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `expedition_person` WRITE;
 /*!40000 ALTER TABLE `expedition_person` DISABLE KEYS */;
 INSERT INTO `expedition_person` VALUES
-(1,2);
+(1,2),
+(1,7);
 /*!40000 ALTER TABLE `expedition_person` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -194,7 +195,7 @@ CREATE TABLE `person` (
   `role` varchar(100) DEFAULT NULL,
   `years_active` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`person_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -207,7 +208,7 @@ LOCK TABLES `person` WRITE;
 INSERT INTO `person` VALUES
 (1,'Newell','Campbell','Scientist/author','1970s'),
 (2,'Dustin','K.','Expedition leader',NULL),
-(4,' Alfred','Swindle','mule','2023-2024');
+(7,' Alfred','Swindle','Mule','2023-2024');
 /*!40000 ALTER TABLE `person` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -222,4 +223,4 @@ SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-11-07 19:18:18
+-- Dump completed on 2026-11-13 18:49:12
